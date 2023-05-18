@@ -1,7 +1,7 @@
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
-import { Terrain } from "./components"
+import { Terrain, Car } from "./components"
 
 function CarShow() {
   return (
@@ -27,6 +27,7 @@ function CarShow() {
         <meshBasicMaterial color={"red"} />
       </mesh>
       <Terrain />
+      <Car />
     </>
   );
 }

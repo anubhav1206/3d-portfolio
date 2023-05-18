@@ -7,7 +7,7 @@ const Terrain = () => {
             {/*Lines aren't showing without hemisphereLights*/}
             <hemisphereLight
             color={[255, 4, 244]}
-            intensity={1}
+            intensity={0.04}
             />
             {/*Floor isn't coloring without directionalLight*/}
             <directionalLight
