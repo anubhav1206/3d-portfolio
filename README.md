@@ -1,2 +1,2 @@
-# 3d-portfolio
-3D Portfolio Webpage Made Using React and Three.js
+This project was created using `vite`
+`npm create vite@latest ./ -- --template react`
