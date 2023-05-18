@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
 import { Terrain, Car } from "./components"
@@ -6,8 +6,8 @@ import { Terrain, Car } from "./components"
 function CarShow() {
   return (
     <>
-      <OrbitControls target={[0, 0.35, 0]} maxPolarAngle={1.45} />
-      <PerspectiveCamera makeDefault fov={50} position={[3, 2, 5]} />
+      {/*<OrbitControls target={[0, 0.35, 0]} maxPolarAngle={1.45} />*/}
+      <PerspectiveCamera makeDefault fov={50} position={[2, 0.5, 1]} rotation={[0, 1.2, 0]}/>
 
       {/*This changes the color of the background*/}
       <color args={[0, 0, 0]} attach="background" />
@@ -22,6 +22,7 @@ function CarShow() {
         castShadow
         shadow-bias={-0.0001}
       />
+      {/*Keeping cube for now to have a refference to 0,0,0 coordinates */}
       <mesh>
         <boxGeometry args={[1, 1, 1]} />
         <meshBasicMaterial color={"red"} />
