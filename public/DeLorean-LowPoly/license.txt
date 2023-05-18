@@ -1,0 +1,11 @@
+Model Information:
+* title:	Delorean - time machine - low poly
+* source:	https://sketchfab.com/3d-models/delorean-time-machine-low-poly-a36c5afa1bb24e16a3adfbcf08eb9390
+* author:	Meloque (https://sketchfab.com/jellyraincoat)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Delorean - time machine - low poly" (https://sketchfab.com/3d-models/delorean-time-machine-low-poly-a36c5afa1bb24e16a3adfbcf08eb9390) by Meloque (https://sketchfab.com/jellyraincoat) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
