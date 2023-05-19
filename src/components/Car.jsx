@@ -1,16 +1,18 @@
 import { useGLTF } from "@react-three/drei"
 import { useRef, useState, useEffect } from 'react';
-import { useFrame } from '@react-three/fiber';
+import { useFrame, useThree } from '@react-three/fiber';
 
 const Car = () => {
     const car = useGLTF('./DeLorean-LowPoly/scene.gltf')
-    const meshRef = useRef();
+    const { camera } = useThree()
+    const meshRef = useRef()
     const [wKeyHeld, setWKeyHeld] = useState(false)
     const [sKeyHeld, setSKeyHeld] = useState(false)
 
     {/*event is depricated but I couldn't find an alternate solution.
         There are more complex solutions to this but for my purposes this suffices,
         since all I want is for the car to move back and forth, nothing else.*/}
+
     const handleKeyDown = (event) => {
         if (event.key == 'w') {
             setWKeyHeld(true);
@@ -38,10 +40,12 @@ const Car = () => {
         // Rotate the mesh around the x-axis
         //meshRef.current.rotation.z += 0.01;
         if (wKeyHeld) {
-            meshRef.current.position.x -= 0.01;
+            meshRef.current.position.x -= 0.02;
+            camera.position.x -= 0.02;
         }
         else if (sKeyHeld) {
-            meshRef.current.position.x += 0.01;
+            meshRef.current.position.x += 0.02;
+            camera.position.x += 0.02;
         }
         
     });
