@@ -3,7 +3,8 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
 import { Terrain, Car } from "./components"
 
-function CarShow() {
+//Need to rename this to something else
+function ShowScene() {
   return (
     <>
       {/*<OrbitControls target={[0, 0.35, 0]} maxPolarAngle={1.45} />*/}
@@ -37,7 +38,7 @@ const App= () => {
   return (
       <Suspense fallback={null}>
         <Canvas shadows>
-          <CarShow />
+          <ShowScene />
         </Canvas>
       </Suspense>
   )
