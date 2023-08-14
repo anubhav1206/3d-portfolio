@@ -7,8 +7,8 @@ import { Terrain, Car, Grid } from "./components"
 function ShowScene() {
   return (
     <>
-      {/*<OrbitControls target={[0, 0.35, 0]} maxPolarAngle={1.45} />*/}
-      <PerspectiveCamera makeDefault fov={50} position={[2, 0.5, 1]} rotation={[0, 1.2, 0]}/>w
+      <OrbitControls target={[0, 0, 0]} maxPolarAngle={1.52}/>
+      <PerspectiveCamera makeDefault fov={50} position={[0, 0.06, 1]}/>
 
       {/*This changes the color of the background*/}
       <color args={[0, 0, 0]} attach="background" />
@@ -28,7 +28,6 @@ function ShowScene() {
         <boxGeometry args={[1, 1, 1]} />
         <meshBasicMaterial color={"red"} />
     </mesh>*/}
-      <Car />
       <Grid />
     </>
   );
