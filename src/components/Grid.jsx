@@ -42,7 +42,7 @@ const Grid = () => {
 
     // TODO: Maybe remove from here and move to App.jsx
     // TODO: Change to another color and probably bump intensity to 100 (this causes the meshlines to change colors)
-    const ambientLight = new AmbientLight("#ffffff", 100);
+    const ambientLight = new AmbientLight("#800080", 100);
     scene.add(ambientLight);
     
     // Spotlight behind of the scene
