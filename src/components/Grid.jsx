@@ -1,4 +1,4 @@
-import { AmbientLight, Clock, Fog, Mesh, MeshStandardMaterial, PlaneGeometry, Scene, SpotLight, TextureLoader } from "three";
+import { AmbientLight, Clock, Mesh, MeshStandardMaterial, PlaneGeometry, Scene, SpotLight, TextureLoader } from "three";
 
 
 const TEXTURE_PATH = "https://res.cloudinary.com/dg5nsedzw/image/upload/v1641657168/blog/vaporwave-threejs-textures/grid.png";
