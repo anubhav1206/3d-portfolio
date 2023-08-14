@@ -7,7 +7,7 @@ import { Terrain, Car, Grid } from "./components"
 function ShowScene() {
   return (
     <>
-      <OrbitControls target={[0, 0, 0]} maxPolarAngle={1.52} maxAzimuthAngle={1.52}/>
+      <OrbitControls target={[0, 0, 0]} minPolarAngle={Math.PI / 2.3} maxPolarAngle={Math.PI / 2.1} minAzimuthAngle={-Math.PI / 19} maxAzimuthAngle={Math.PI / 19} enableZoom={false}/>
       <PerspectiveCamera makeDefault fov={50} position={[0, 0.06, 1]}/>
 
       {/*This changes the color of the background*/}
