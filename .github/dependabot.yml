@@ -9,3 +9,7 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
+    commit-message:
+      # Prefix all commit messages with "NPM Update: "
+      prefix: "NPM Update"
+      include: "scope"
