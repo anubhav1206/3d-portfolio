@@ -10,11 +10,7 @@ const gridTexture = textureLoader.load(TEXTURE_PATH);
 const terrainTexture = textureLoader.load(DISPLACEMENT_PATH);
 const metalnessTexture = textureLoader.load(METALNESS_PATH);
 
-
 const scene = new Scene();
-
-const fog = new Fog("#000000", 1, 2.5);
-scene.fog = fog;
 
 const Grid = () => {
     const geometry = new PlaneGeometry(1, 2, 24, 24);

@@ -7,12 +7,11 @@ import { Terrain, Car, Grid } from "./components"
 function ShowScene() {
   return (
     <>
-      <OrbitControls target={[0, 0, 0]} maxPolarAngle={1.52}/>
+      <OrbitControls target={[0, 0, 0]} maxPolarAngle={1.52} maxAzimuthAngle={1.52}/>
       <PerspectiveCamera makeDefault fov={50} position={[0, 0.06, 1]}/>
 
       {/*This changes the color of the background*/}
       <color args={[0, 0, 0]} attach="background" />
-
       {/*This is creating a new spotlight, may need to be changed later!*/}
       {/*<spotLight
         color={[255, 4, 244]}
@@ -37,6 +36,7 @@ const App= () => {
   return (
       <Suspense fallback={null}>
         <Canvas shadows>
+          <fog attach="fog" color="black" near={1} far={2.5} />
           <ShowScene />
         </Canvas>
       </Suspense>
